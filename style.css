@@ -1,14 +1,58 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #f0f4f8, #d9e4ec);
-  color: #333;
+  background: radial-gradient(ellipse at center, #0d1b2a 0%, #1b263b 50%, #415a77 100%);
+  color: #e0e1dd;
   padding: 40px;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#stars-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.tabs {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  background: #415a77;
+  color: #e0e1dd;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.tab-button.active {
+  background: #778da9;
+}
+
+.tab-button:hover {
+  background: #778da9;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
 }
 
 h1 {
   text-align: center;
   font-size: 2.5rem;
-  color: #222;
+  color: #e0e1dd;
   margin-bottom: 40px;
 }
 
@@ -19,17 +63,19 @@ h1 {
 }
 
 .card {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
   padding: 25px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.4);
 }
 
 .card img {
@@ -37,26 +83,27 @@ h1 {
   height: 100px;
   border-radius: 50%;
   margin-bottom: 15px;
-  border: 3px solid #0077cc;
+  border: 3px solid #778da9;
 }
 
 .card h2 {
   font-size: 1.1rem;
   margin-bottom: 15px;
-  color: #444;
+  color: #e0e1dd;
 }
 
 .card a {
   display: inline-block;
   padding: 10px 18px;
   border-radius: 6px;
-  background: #0077cc;
-  color: #fff;
+  background: #778da9;
+  color: #0d1b2a;
   text-decoration: none;
   font-weight: bold;
   transition: background 0.3s ease;
 }
 
 .card a:hover {
-  background: #005fa3;
+  background: #415a77;
+  color: #e0e1dd;
 }
