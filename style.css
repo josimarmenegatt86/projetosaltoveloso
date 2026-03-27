@@ -1,109 +1,135 @@
 body {
+  /* Estilos para o corpo da página */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Fonte da página */
   background: radial-gradient(ellipse at center, #0d1b2a 0%, #1b263b 50%, #415a77 100%);
+  /* Fundo em gradiente radial simulando galáxia */
   color: #e0e1dd;
+  /* Cor do texto */
   padding: 40px;
+  /* Espaçamento interno */
   margin: 0;
+  /* Margem zero */
   overflow-x: hidden;
+  /* Oculta overflow horizontal */
 }
 
 #stars-canvas {
+  /* Estilos para o canvas das estrelas */
   position: fixed;
+  /* Posição fixa */
   top: 0;
+  /* Topo da página */
   left: 0;
+  /* Esquerda da página */
   width: 100%;
+  /* Largura total */
   height: 100%;
+  /* Altura total */
   z-index: -1;
+  /* Atrás de outros elementos */
   pointer-events: none;
-}
-
-.tabs {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.tab-button {
-  background: #415a77;
-  color: #e0e1dd;
-  border: none;
-  padding: 10px 20px;
-  margin: 0 5px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background 0.3s;
-}
-
-.tab-button.active {
-  background: #778da9;
-}
-
-.tab-button:hover {
-  background: #778da9;
-}
-
-.tab-content {
-  display: none;
-}
-
-.tab-content.active {
-  display: block;
+  /* Não interage com mouse */
 }
 
 h1 {
+  /* Estilos para títulos h1 */
   text-align: center;
+  /* Centralizado */
   font-size: 2.5rem;
+  /* Tamanho da fonte */
   color: #e0e1dd;
+  /* Cor */
   margin-bottom: 40px;
+  /* Margem inferior */
 }
 
 .container {
+  /* Estilos para o container dos cards */
   display: grid;
+  /* Layout em grid */
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  /* Colunas responsivas */
   gap: 25px;
+  /* Espaçamento entre itens */
 }
 
 .card {
+  /* Estilos para os cards */
   background: rgba(255, 255, 255, 0.1);
+  /* Fundo semi-transparente */
   border-radius: 12px;
+  /* Bordas arredondadas */
   box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  /* Sombra */
   padding: 25px;
+  /* Espaçamento interno */
   text-align: center;
+  /* Texto centralizado */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Transições */
   backdrop-filter: blur(10px);
+  /* Filtro de fundo */
   border: 1px solid rgba(255, 255, 255, 0.2);
+  /* Borda semi-transparente */
 }
 
 .card:hover {
+  /* Estilos para hover no card */
   transform: translateY(-8px);
+  /* Elevação */
   box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+  /* Sombra maior */
 }
 
 .card img {
+  /* Estilos para imagens nos cards */
   width: 100px;
+  /* Largura */
   height: 100px;
+  /* Altura */
   border-radius: 50%;
+  /* Circular */
   margin-bottom: 15px;
+  /* Margem inferior */
   border: 3px solid #778da9;
+  /* Borda */
 }
 
 .card h2 {
+  /* Estilos para títulos h2 nos cards */
   font-size: 1.1rem;
+  /* Tamanho da fonte */
   margin-bottom: 15px;
+  /* Margem inferior */
   color: #e0e1dd;
+  /* Cor */
 }
 
 .card a {
+  /* Estilos para links nos cards */
   display: inline-block;
+  /* Bloco inline */
   padding: 10px 18px;
+  /* Espaçamento interno */
   border-radius: 6px;
+  /* Bordas arredondadas */
   background: #778da9;
+  /* Fundo */
   color: #0d1b2a;
+  /* Cor do texto */
   text-decoration: none;
+  /* Sem sublinhado */
   font-weight: bold;
+  /* Negrito */
   transition: background 0.3s ease;
+  /* Transição */
 }
 
 .card a:hover {
+  /* Estilos para hover no link */
   background: #415a77;
+  /* Fundo no hover */
   color: #e0e1dd;
+  /* Cor do texto no hover */
 }

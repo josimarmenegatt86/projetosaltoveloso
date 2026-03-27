@@ -1,20 +1,26 @@
 <!DOCTYPE html>
+<!-- Declaração do tipo de documento HTML5 -->
 <html lang="pt-BR">
+<!-- Define o idioma da página como português brasileiro -->
 <head>
+  <!-- Seção de metadados da página -->
   <meta charset="UTF-8">
+  <!-- Define a codificação de caracteres como UTF-8 -->
   <title>Aprendizagem Industrial em Programação de Sistemas de Informação</title>
+  <!-- Título da página exibido na aba do navegador -->
   <link rel="stylesheet" href="style.css">
+  <!-- Link para o arquivo de estilos CSS -->
 </head>
 <body>
+  <!-- Corpo da página -->
   <img src="banner.png" alt="Aprendizagem Industrial de Programação de Sistema de Informação - SENAI Salto Veloso" style="width:100%; max-height:250px; object-fit:cover;">
+  <!-- Imagem do banner com foguete, ajustada para cobrir toda a largura -->
   <canvas id="stars-canvas"></canvas>
-  <div class="tabs">
-    <button class="tab-button active" onclick="openTab('alunos')">Alunos</button>
-    <button class="tab-button" onclick="openTab('projetos')">Projetos</button>
-  </div>
-  <div id="alunos" class="tab-content active">
-    <h1>Perfis dos Alunos no github</h1>
-    <div class="container">
+  <!-- Canvas para o efeito de estrelas animadas -->
+  <h1>Perfis dos Alunos no github</h1>
+  <!-- Título da seção de perfis dos alunos -->
+  <div class="container">
+    <!-- Container em grid para os cards dos alunos -->
       <div class="card"><img src="https://github.com/alicesmedeiros-dot.png"><h2>Alice dos Santos de Medeiros</h2><a href="https://github.com/alicesmedeiros-dot" target="_blank">Ver Perfil</a></div>
       <div class="card"><img src="https://github.com/allanknopf-creator.png"><h2>Allan Derik Boeira Knopf</h2><a href="https://github.com/allanknopf-creator" target="_blank">Ver Perfil</a></div>
       <div class="card"><img src="https://github.com/amandaperovano-svg.png"><h2>Amanda Cardoso Perovano</h2><a href="https://github.com/amandaperovano-svg" target="_blank">Ver Perfil</a></div>
@@ -46,15 +52,9 @@
       <div class="card"><img src="https://github.com/vanessabarp-blip.png"><h2>Vanessa Samanta Barp</h2><a href="https://github.com/vanessabarp-blip" target="_blank">Ver Perfil</a></div>
       <div class="card"><img src="https://github.com/veronicatomasi-netize.png"><h2>Verônica Prestes Tomasi</h2><a href="https://github.com/veronicatomasi-netize" target="_blank">Ver Perfil</a></div>
       <div class="card"><img src="https://github.com/wesleythibes150-alt.png"><h2>Wesley Thibes</h2><a href="https://github.com/wesleythibes150-alt" target="_blank">Ver Perfil</a></div>
+      <!-- Fim dos cards dos alunos -->
     </div>
-  </div>
-  <div id="projetos" class="tab-content">
-    <h1>Projetos dos Alunos</h1>
-    <div class="container">
-      <!-- Placeholder for projects -->
-      <p>Projetos em desenvolvimento...</p>
-    </div>
-  </div>
   <script src="script.js"></script>
+  <!-- Link para o arquivo JavaScript -->
 </body>
 </html>
